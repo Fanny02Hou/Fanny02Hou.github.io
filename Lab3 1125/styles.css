@@ -1,0 +1,80 @@
+body{
+	background-image: url("Sunset.jpg");
+	background-position: bottom right;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-color: lightsteelblue;
+	font-family: verdana, helvetica, sans-serif;
+	color:black;
+}
+h1{
+	font-size:10pt;
+	font-weight:300;
+}
+.head {
+	color:darkred;
+	font-size:35pt;
+	font-weight:bold;
+}
+p{
+	color:grey;
+	text-indent:1em ;
+	font-size:22pt;
+	font-weight:bold;
+	padding-top:500;
+	padding-right:500;
+	padding-bottom:550;
+	padding-left:500;
+}
+.title p{
+	color:inherit;
+}
+.practice3{
+	border:2px solid lightgray;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: linen;
+}
+
+nav{
+	font-weight: bold;
+	color: darkred;
+	border: 2px solid lightcoral;
+	text-align: center;
+	width: 10em;
+	background-color:lightyellow;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+nav ul {display: none;
+		list-style: none;
+		position:relative;
+		top: 5px;
+		left: -39.65px;
+		width: 160.5px;	
+}
+nav:hover ul{display:block;}
+nav ul li {
+	border-right:3px solid darkred;
+	border-top: 2px solid lightcoral;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	padding-left:65px;
+	background-color: lightpink;
+}
+nav ul li:hover{
+	background-color: palegoldenrod;
+}
+a{text-decoration: none;}
+
+@media screen and (min-width: 800px){
+	body{
+		background-color: lightgrey;
+	}
+}
+	
