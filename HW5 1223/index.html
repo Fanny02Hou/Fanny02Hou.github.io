@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			font-family: monospace;
+			text-align: center;
+
+		}
+		form{
+			background:red;
+			border-style: groove;
+			border-width: 10px;
+			border-color: powderblue;
+			box-shadow: 5px;
+		}
+		select, option{
+			width: 500px;
+			height: 25px;
+		}
+		input{
+			width: 500px;
+			height: 25px;
+		}
+		button{
+			background-color: mediumaquamarine;
+			color: black;
+			font-family: fantasy;
+			border-color: powderblue;
+			width: 500px;
+			height: 25px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<h1>JS Calculator</h1>
+	<p><label>Number1</p>
+		<input name="number1" id="number1" type="text">
+	</label>
+	<p><label>Number2</p>
+		<input name="number2" id="number2" type="text" >
+	</label>
+	<p><label>Operate way?</p>
+		<select name="operate" id="select">
+			<option value="plus">+</option>
+			<option value="substract">-</option>
+			<option value="multiply">*</option>
+			<option value="divide">/</option>
+		</select><br>
+		<p>
+		<button onclick="outcome()" type="button">calculate</button>
+		<div id="result"></div>
+<script>
+	function outcome(){
+		var select=document.getElementById("select");
+		var number1=parseInt(document.getElementById("number1").value);
+		var number2=parseInt(document.getElementById("number2").value);
+		var result=0;
+			if (select.value=="plus") {
+			result=number1+number2;
+			}else if(select.value=="substract"){
+			result=number1-number2;
+			}else if(select.value=="multiply"){
+			result=number1*number2;
+			}else{
+			result=number1/number2;
+			}
+			document.getElementById("result").innerHTML=String("Result="+result);
+	}
+</script>
+</form>
+</body>
+</html>
